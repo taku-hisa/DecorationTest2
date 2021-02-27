@@ -23,7 +23,7 @@ class ExpandableItemAdapter(
         if (holder is TitleViewHolder) {
             holder.binding.text.text = title
             holder.binding.expandIcon.setImageResource(
-                if (expanded) android.R.drawable.btn_star_big_off else android.R.drawable.btn_star_big_on)
+                if (expanded) android.R.drawable.presence_online else android.R.drawable.presence_invisible)
             holder.binding.root.setOnClickListener {
                 toggleExpand()
             }

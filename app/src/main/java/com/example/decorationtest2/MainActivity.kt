@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.decorationtest2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,14 +23,8 @@ class MainActivity : AppCompatActivity() {
                 ExpandableItemAdapter(context, "3", listOf("3-1", "3-2", "3-3")),
             )
 
-            layoutManager =
-                when {
-                    resources.configuration.orientation
-                            == Configuration.ORIENTATION_PORTRAIT
-                    -> GridLayoutManager(context, 2)
-                    else
-                    -> GridLayoutManager(context, 4)
-                }
+            layoutManager = LinearLayoutManager(context)
         }
     }
+
 }
