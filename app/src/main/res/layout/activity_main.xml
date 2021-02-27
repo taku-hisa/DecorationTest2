@@ -13,6 +13,6 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="130dp"
         tools:layout_editor_absoluteY="337dp"
-        android:backgroundTint="@color/black"/>
+        android:background="#95957B"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
